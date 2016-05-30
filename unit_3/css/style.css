@@ -1,4 +1,9 @@
+body{
+	background-color: #7FC7FF;
+}
+
 section {
-	background: url("images/magic_kingdom.jpg");
+	background: url("images/magic.jpg");
 	background-size: cover;
 }
+
