@@ -19,7 +19,7 @@ h1, h3{
 }
 
 nav a {
-	color: #cccccc;
+	color: white;
 	font-style: italic;
 	margin-right: 40px;
 }
@@ -31,4 +31,13 @@ header, main, footer {
 
 #slogan{
 	font-style: italic;
+}
+
+ul, ol{
+	padding-left: 60px;
+}
+
+main{
+	line-height: 1.3;
+	margin: 20px;
 }
