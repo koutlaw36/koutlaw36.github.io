@@ -25,6 +25,8 @@ nav a {
 }
 
 main a {
+	color: white;
+	font-style: italic; 
 	margin-right: 25px;
 	margin-top: 20px;
 }
