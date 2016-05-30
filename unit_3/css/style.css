@@ -16,13 +16,17 @@ section {
 h1, h3{
 	color: white;
 	margin: 20px;
-	margin-top: 20px;
 }
 
 nav a {
 	color: white;
 	font-style: italic;
 	margin-right: 40px;
+}
+
+main a {
+	margin-right: 25px;
+	margin-top: 20px;
 }
 
 header, main, footer {
