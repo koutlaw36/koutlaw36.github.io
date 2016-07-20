@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #C4FFE8;
+	background-color: #CCFFE8;
 	color: #222914;
 	font-size: 16px;
 }
@@ -47,14 +47,13 @@ footer{
 }
 
 .columns{
-	background-color: violet;
 	border: 1px black solid;
 	padding: 20px;
 	float: left;
-	width: 30px;
+	width: 30%;
 }
 
-/*.clearfix:after{
+.clearfix:after{
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -62,7 +61,7 @@ footer{
 	clear: both;
 	height: 0;
 }
-*/
+
 nav a{
 	color: #7FC7FF;
 	font-style: italic;
