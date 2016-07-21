@@ -4,7 +4,6 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 body{
@@ -35,9 +34,10 @@ footer{
 }
 
 #one{
-	background: url(../images/magic_kingdom.jpg) no-repeat center center scroll;
-	background-size: cover;
+	background: url(../images/magic_kingdom3.jpg) no-repeat center center scroll;
 	height: 50em;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .clearfix:after{
@@ -55,7 +55,7 @@ footer{
 }
 
 .columns{
-	width: 30%;
+	width: 28%;
 	margin: 1.5%;
 	float: left;
 	padding: 1%;
@@ -70,8 +70,9 @@ nav a{
 	padding: .2em;
 }
 
-.tabs{
-
+.tabs > article{
+	max-width: 350px;
+	float: left;
 }
 
 .lowernav{
