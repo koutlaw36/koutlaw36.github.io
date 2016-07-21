@@ -4,6 +4,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body{
@@ -31,7 +32,7 @@ footer{
 	text-align: center;
 	padding-top: 1.5em;
 	margin: 1em 0;
-
+}
 
 #one{
 	background: url(../images/magic_kingdom.jpg) no-repeat center center scroll;
@@ -39,27 +40,25 @@ footer{
 	height: 50em;
 }
 
-#three_columns{
-	background-color: #FFB7CF;
-	border: 1px black solid;
-	padding: 20px;
-	width: 100%;
+.clearfix:after{
+	visibility: hidden;
+	height: 0;
+	font-size: 0;	
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+#wrapper{
+	width: 98%;
+	margin: auto;
 }
 
 .columns{
-	border: 1px black solid;
-	padding: 20px;
-	float: left;
 	width: 30%;
-}
-
-.clearfix:after{
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+	margin: 1.5%;
+	float: left;
+	padding: 1%;
 }
 
 nav a{
