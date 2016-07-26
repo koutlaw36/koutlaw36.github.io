@@ -145,8 +145,12 @@ hr {
 	border: none;
 	height: 2px;
 	background-color: #8C8C8C;
-	width: 80%;
+	width: 90%;
 	margin: 2em auto;
+}
+
+.hr_rule {
+	width: 76.5%;
 }
 
 #slogan{
