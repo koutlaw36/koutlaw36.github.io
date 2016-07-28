@@ -104,6 +104,14 @@ nav a{
 	margin: .5em 0;
 }
 
+#wide {
+	max-width: 550px;
+	width: 46%;
+	float: left;
+	padding: 0 1%;
+	margin: .5em 0;
+}
+
 .lowernav{
 	margin-right: 2.5em;
 	letter-spacing: .2em;
