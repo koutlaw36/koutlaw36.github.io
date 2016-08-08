@@ -36,6 +36,18 @@ footer{
 	max-width: 1200px;
 	background-size: cover;
 	margin: 0 auto;
+	text-align: center;
+}
+
+#one > a {
+	display: block;
+	width: 20%;
+	padding: 1.2em 1em;	
+	margin: 1em auto;
+	background-color: #ebffff;
+	font-size: 1.2em;
+	color: #5598FF;
+	border: .15em solid #0D1726;
 }
 
 .clearfix:after{
@@ -96,7 +108,17 @@ nav a{
 	padding: .2em;
 }
 
-.floats > article{
+.narrow > img{
+	max-width: 275px;
+	width: 100%;
+}
+
+.wide > img {
+	max-width: 550px;
+	width: 100%;
+}
+
+.narrow {
 	max-width: 275px;
 	width: 23%;
 	float: left;
@@ -104,7 +126,7 @@ nav a{
 	margin: .5em 0;
 }
 
-#wide {
+.wide {
 	max-width: 550px;
 	width: 46%;
 	float: left;
@@ -164,4 +186,29 @@ hr {
 #slogan{
 	font-style: italic;
 	color: white;
+	padding-top: 14em; 
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+@media only screen and (max-width: 1100px){
+	body {
+		font-size: 14px;
+	}
+	.narrow {
+		float: none;
+		width: auto;
+	}
+
+	.wide {
+		float: none;
+		width: auto;
+	}
+
 }
