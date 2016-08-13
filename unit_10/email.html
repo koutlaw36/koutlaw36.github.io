@@ -8,8 +8,15 @@
 		@media only screen and (max-device-width: 630px){
 			#main-table{
 				width: 100% !important;
+				max-width: 600px !important;
 			}
-			.shoulder_top_pics {
+			#show_whenreduced {
+				display: block !important;
+			}
+			#hide_whenreduced {
+				display: none !important;
+			}
+			#top_pic {
 				width: 100% !important;
 			}
 			#jeans_pic {
@@ -19,10 +26,22 @@
 				width: 100% !important;
 			}
 			#covet{
-				font-size: 50px;
+				font-size: 44px !important;
 			}
 			.high {
-				font-size: 40px;
+				font-size: 38px !important;
+			}
+			.high_links {
+				font-size: 26px !important;
+			}
+			.nav {
+				font-size: 30px !important;
+			}
+			.footer{
+				display: block !important;
+				text-align: center !important;
+				font-size: 20px !important;
+				padding: 5px !important;
 			}
 		}
 		</style>
@@ -45,26 +64,32 @@
 <!-- does letter-spacing work here? -->
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36">OFF-THE-SHOULDER TOPS</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36" class="high_links">OFF-THE-SHOULDER TOPS</a>
 							</td>
 						</tr>
-						<tr>
+						<tr id="hide_whenreduced">
 							<td>
-								<img src="images/off_the_shoulder.jpg" width="300" alt="Off-The-Shoulder Top" title="Off-The-Shoulder Top" class="shoulder_top_pics">
+								<img src="images/off_the_shoulder.jpg" width="300" alt="Off-The-Shoulder Top" title="Off-The-Shoulder Top">
 							</td>
 							<td width="0">
 							</td>
 							<td>
-								<img src="images/off_the_shoulder2.jpg" width="300" alt="Off-The-Shoulder Top" title="Off-The-Shoulder Top" class="shoulder_top_pics">
+								<img src="images/off_the_shoulder2.jpg" width="300" alt="Off-The-Shoulder Top" title="Off-The-Shoulder Top">
 							</td>
 						</tr>
+						<tr id="show_whenreduced" style="display: none;">
+							<td colspan="3" align="center">
+								<img src="images/off_the_shoulder.jpg" width="600" alt="Off-The-Shoulder Top" title="Off-The-Shoulder Top" id="top_pic">
+							</td>
+						</tr>
+<!-- need assistance making it properly responsive with the top images -->
 						<tr style="background-color: #BFE9F0">
 							<td colspan="3" align="center">
 								<span style="font-family: Georgia; font-size: 20px;" class="high"><span style="text-transform: uppercase; letter-spacing: 1.5;">highly </span><span style="font-style: italic;">sought after</span></span>
 <!-- does letter-spacing work here? -->
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36">MUST-HAVE JEANS</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36" class="high_links">MUST-HAVE JEANS</a>
 							</td>
 						</tr>
 						<tr>
@@ -78,7 +103,7 @@
 <!-- does letter-spacing work here? -->
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36">STRAPPY HEELS</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #292B36" class="high_links">STRAPPY HEELS</a>
 							</td>
 						</tr>
 						<tr>
@@ -88,23 +113,23 @@
 						</tr>
 						<tr style="background-color: #BFE9F0">
 							<td colspan="3" align="center">
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase">new arrivals</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase" class="nav">new arrivals</a>
 
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase">shoes &amp accessories</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase" class="nav">shoes &amp accessories</a>
 
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase">house &amp home</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase" class="nav">house &amp home</a>
 
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase">sale</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase" class="nav">sale</a>
 
 								<br>
 
-								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase">store locator</a>
+								<a href="#" style="font-family: Georgia; font-size: 14px; color: #ccc text-transform: uppercase" class="nav">store locator</a>
 							</td>
 						</tr>
 						<tr>
@@ -126,11 +151,11 @@
 						</tr>
 						<tr>
 							<td colspan="3" align="center">
-								<span style="font-family: Georgia; font-size: 10px; color: #bbb;">Add <a href="#">covet@email2.covet.com</a> to your address book.</span>
+								<span style="font-family: Georgia; font-size: 10px; color: #bbb;" class="footer">Add <a href="#">covet@email2.covet.com</a> to your address book.</span>
 
-								<a href="#" style="font-family: Georgia; font-size: 10px; color: #ccc text-transform: uppercase">covet.com</a>
+								<a href="#" style="font-family: Georgia; font-size: 10px; color: #ccc text-transform: uppercase" class="footer">covet.com</a>
 
-								<a href="#" style="font-family: Georgia; font-size: 10px; color: #ccc text-transform: uppercase">Unsubscribe</a>
+								<a href="#" style="font-family: Georgia; font-size: 10px; color: #ccc text-transform: uppercase" class="footer">Unsubscribe</a>
 							</td>
 						</tr>
 					</table>
